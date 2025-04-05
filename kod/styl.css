@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    min-height: 100vh;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-image: -webkit-linear-gradient(white, #5157b6) ;
+    background-image: -o-linear-gradient(white, #5157b6) ;
+    background-image: linear-gradient(white, #5157b6) ;
+    background-attachment: fixed;
+}
+
+header{
+    height: 195px;
+    color: white;
+    text-align: center;
+    background-image: url(/obrazy/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1.5vh;
+}
+
+.phasmo{
+    height: 195px;
+    color: white;
+    text-align: center;
+    background-image: url(/obrazy/background2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1.5vh; 
+}
+.subnautica{
+    height: 195px;
+    color: white;
+    text-align: center;
+    background-image: url(/obrazy/background3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1.5vh; 
+}
+.sword{
+    height: 195px;
+    color: white;
+    text-align: center;
+    background-image: url(/obrazy/background4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1.5vh; 
+}
+.tcg{
+    height: 195px;
+    color: white;
+    text-align: center;
+    background-image: url(/obrazy/background5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1.5vh; 
+}
+
+h1{
+    padding-top: 20px;
+    font-size: 3.2vh;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.navbar li{
+    list-style-type: none;
+    background-color: #000333;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(245, 66%, 31%);
+    color: #8e93d8;
+    font-weight: bold;
+}
+nav li{
+    color: white;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a.active {
+    color: yellow; 
+    font-weight: bold;
+    border-bottom: 2px solid yellow; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #080343;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+
+    text-align: center;
+    width: 100%;
+}
+.tekst{
+    background-color: #000333;
+    opacity: 0.4;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 50%;
+    margin-left: 20px;
+    font-size: 1.8vh;
+}
+.tekstp{
+    background-color: #000333;
+    opacity: 0.4;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 50%;
+    margin-left: 10%;
+    font-size: 1.8vh;
+}
+.tekst a{
+    color: aqua;
+    text-decoration: underline;
+}
+h2{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}   
+.main{
+    float: right;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 20%;
+    margin-right: 20%;
+    
+}
+
+@keyframes nightVisionBlink {
+    0%, 100% {
+        opacity: 0.8;
+        filter: brightness(1) contrast(2) drop-shadow(0 0 10px #0f0);
+    }
+    50% {
+        opacity: 1;
+        filter: brightness(1.3) contrast(3) drop-shadow(0 0 20px #0f0);
+    }
+}
+
+.night-vision-effect {
+    float: right;
+    top: 20%;
+    margin-right: 5%;
+    padding: 40px;
+    top: 30%;
+    right: 10% ;
+    width: 300px;
+    height: 300px;
+    background-image: url("/obrazy/sigma.webp"),
+                      radial-gradient(rgba(0, 255, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                      repeating-linear-gradient(transparent, rgba(0, 255, 0, 0.2) 5px);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+    animation: nightVisionBlink 0.5s infinite alternate;
+}
+
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, white, black, yellow, blue, aqua, white);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s linear infinite;
+}
+
+
+ h1 {
+    text-align: center;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+}
+.container {
+    color: #5157b6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.card {
+    background: #1c1c2e;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+}
+.card h2 {
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.videło{
+    width: 20%;
+    position: absolute;
+    height: auto;
+    float: right;
+    top: 70%;
+   right: 5%;
+}
+.logo_ssh{
+    width:30%;
+    height: auto;
+    position: absolute;
+    float: right;
+    left: 60%;
+    top: 40%
+}
+p{
+    margin-bottom: 2px;
+}
+.tekstssh1{
+    background-color: #000333;
+    opacity: 0.4;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    left: 45%;
+    font-size: 1.8vh;
+}
+.logo_sword{
+    width: 20%;
+    height: auto;
+
+}
