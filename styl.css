@@ -11,6 +11,7 @@ body{
     background-image: -o-linear-gradient(white, #5157b6) ;
     background-image: linear-gradient(white, #5157b6) ;
     background-attachment: fixed;
+    overflow-x: hidden !important;
 }
 
 header{
@@ -171,13 +172,11 @@ h2{
 
 .night-vision-effect {
     float: right;
-    top: 20%;
     margin-right: 5%;
     padding: 40px;
-    top: 30%;
-    right: 10% ;
-    width: 300px;
-    height: 300px;
+    width: 20%;
+    height: 200px;
+    border-radius: 20px;
     background-image: url("obrazy/sigma.webp"),
                       radial-gradient(rgba(0, 255, 0, 0.3), rgba(0, 0, 0, 0.8)),
                       repeating-linear-gradient(transparent, rgba(0, 255, 0, 0.2) 5px);
@@ -219,11 +218,13 @@ h3 {
     margin-top: 20px;
 }
 .card {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 250px;
+    box-sizing: border-box;
     background: #1c1c2e;
     border: 2px solid #ffcc00;
     border-radius: 10px;
     padding: 15px;
-    width: 250px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
@@ -240,40 +241,146 @@ h3 {
     width: 100%;
     height: auto;
 }
-.videło{
-    width: 20%;
-    position: absolute;
-    height: auto;
-    float: right;
-    top: 70%;
-   right: 5%;
+ul.container{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
 }
-.logo_ssh{
+li.card{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.video{
+    margin-bottom: 20px;
+}
+.video video{
+    width: 25%;
+    height: auto;
+    position: relative;
+    margin-left: 38%;
+    top: 50%;
+
+}
+
+.historia{
     width:30%;
     height: auto;
-    position: absolute;
     float: right;
     left: 60%;
-    top: 40%
+    margin-top: 7%;
+    margin-right: 5%;
 }
 p{
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 .tekstssh1{
     background-color: #000333;
     opacity: 0.4;
     padding: 20px;
     color: white;
+    margin-left: 25%;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 50%;
+    position: static;
+    font-size: 1.8vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+.tekstssh2{
+    background-color: #000333;
+    opacity: 0.4;
+    padding: 20px;
+    color: white;
+    margin-left: 25%;
+    top: 200%;
     border-radius: 20px;
     margin-bottom: 20px;
     text-align: justify;
     width: 50%;
     position: relative;
-    left: 45%;
     font-size: 1.8vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
 }
-.logo_sword{
-    width: 20%;
+.swordmapa{
+    width: 40%;
+    display: flex;
     height: auto;
-
+    margin-top: 20px;
+    margin-left: 3%;
 }
+
+.gallery {
+    --g: 8px;
+    display: grid;
+    clip-path: inset(1px);
+    position: relative;
+    left: 37%;
+    margin-left: 3%;
+}
+
+.gallery > img {
+    --_p: calc(-1 * var(--g));
+    grid-area: 1/1;
+    width: 450px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: 0.4s 0.1s;
+}
+
+.gallery > img:first-child {
+    clip-path: polygon(0 0, calc(50% + var(--_p)) 0, calc(50% + var(--_p)) 100%, 0 100%);
+}
+
+.gallery > img:last-child {
+    clip-path: polygon(100% 0, calc(50% - var(--_p)) 0, calc(50% - var(--_p)) 100%, 100% 100%);
+}
+
+.gallery:hover > img:last-child,
+.gallery:hover > img:first-child:hover {
+    --_p: calc(50% - var(--g));
+}
+
+.gallery:hover > img:first-child,
+.gallery:hover > img:first-child:hover + img {
+    --_p: calc(-50% - var(--g));
+}
+
+@media (max-width: 768px) {
+  .historia {
+    width: 90%;
+    float: none;
+    left: auto;
+    top: auto;
+    margin: 1rem auto;
+  }
+
+  .tekstssh1, .tekstssh2 {
+    width: 90%;
+    left: auto;
+    top: auto;
+    margin: 1rem auto;
+  }
+
+  .swordmapa {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery {
+    left: auto;
+    margin: 1rem auto;
+  }
+} 
