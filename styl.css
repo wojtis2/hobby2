@@ -721,33 +721,28 @@ header, footer, nav, .navbar, .main, .night-vision-effect, .gallery, video, .gal
     padding: 0;
     border: none !important;
 }
-
-    a::after {
+a::after {
       content: " (" attr(href) ")";
       font-size: 10pt;
     }
-  
-    h1, h2, h3 {
+h1, h2, h3 {
       color: black !important;
       text-align: left;
       text-shadow: none !important;
     }
-  
-    img {
+img {
       max-width: 100%;
       height: auto;
       page-break-inside: avoid;
     }
-  
-    .container, .wzium {
+.container, .wzium {
       display: block !important;
     }
-  
-    .submit {
+.submit {
       display: none !important;
     }
   }
-  .discord{
+.discord{
     justify-content: center;
     display: flex;
     margin-top: 1%;
