@@ -750,7 +750,9 @@ header, footer, nav, .navbar, .main, .night-vision-effect, .gallery, video, .gal
   .discord{
     justify-content: center;
     display: flex;
-    width: 100%;
-    height: auto;
     margin-top: 1%;
+}
+.discord img{
+    width: 40%;
+    height: auto;
 }
