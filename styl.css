@@ -593,3 +593,150 @@ label {
     background-color: #2196f3;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    header, .phasmo, .subnautica, .sword, .tcg {
+      background-size: cover;
+      font-size: 2vh;
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .navbar li {
+      display: block;
+      text-align: center;
+      margin: 5px 0;
+    }
+  
+    nav ul {
+      padding: 0;
+      display: block;
+      text-align: center;
+    }
+  
+    .main, .night-vision-effect {
+      float: none;
+      width: 90%;
+      margin: 1rem auto;
+    }
+  
+    .tekst, .tekstp, .tekstssh1, .tekstssh2, .tekstsub, .teksttcg {
+      width: 90%;
+      margin: 1rem auto;
+      font-size: 2vh;
+    }
+  
+    .container, ul.container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card, li.card {
+      max-width: 90%;
+      flex: 1 1 90%;
+    }
+  
+    .video video {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  
+    .gallery {
+      width: 90%;
+      left: 0;
+      transform: none;
+      margin: 1rem auto;
+    }
+  
+    .logo, .trailer, .swordmapa, .historia {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  
+    .wzium {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .wzium li {
+      width: 90%;
+    }
+  
+    .form-card {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    h2, h3 {
+      font-size: 1.2em;
+    }
+  
+    .submit {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+  
+    .gallery > img {
+      width: 100%;
+    }
+  }
+  @media print {
+    * {
+      color: black !important;
+      background: none !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+      filter: none !important;
+      animation: none !important;
+    }
+  
+    body {
+      background: white !important;
+      font-size: 12pt;
+      line-height: 1.4;
+    }
+  
+    header, footer, nav, .navbar, .main, .night-vision-effect, .gallery, video, .galleria {
+      display: none !important;
+    }
+  
+    .tekst, .tekstp, .tekstssh1, .tekstssh2, .tekstsub, .teksttcg, .form-card, .wzium li, .card {
+      width: 100% !important;
+      opacity: 1 !important;
+      background: none !important;
+      color: black !important;
+      margin: 0 0 1rem 0;
+      padding: 0;
+      border: none !important;
+    }
+  
+    a::after {
+      content: " (" attr(href) ")";
+      font-size: 10pt;
+    }
+  
+    h1, h2, h3 {
+      color: black !important;
+      text-align: left;
+      text-shadow: none !important;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      page-break-inside: avoid;
+    }
+  
+    .container, .wzium {
+      display: block !important;
+    }
+  
+    .submit {
+      display: none !important;
+    }
+  }
+  
