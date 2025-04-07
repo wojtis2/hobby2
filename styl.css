@@ -276,9 +276,10 @@ li.card{
     width: 25%;
     height: auto;
     position: relative;
-    margin-left: 38%;
-    top: 50%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .historia{
@@ -337,9 +338,8 @@ p{
     --g: 8px;
     display: grid;
     clip-path: inset(1px);
-    position: relative;
-    left: 34.5%;
-    margin-left: 3%;
+    justify-content: center;
+
 }
 
 .gallery > img {
@@ -398,11 +398,11 @@ p{
 } 
 .logo{
     width: 75%;
-    margin-top: 20px;   
-
+    margin-top: 20px;  
     height: auto;
-    margin-left: 12%;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 .trailer {
     margin-left: 10%;
